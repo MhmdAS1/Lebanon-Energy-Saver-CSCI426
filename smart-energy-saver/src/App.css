@@ -1,0 +1,347 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f6f8; 
+}
+
+/* App Container */
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-container {
+  flex: 1; /* hay bt5li content ynzil el footer */
+}
+
+.hero {
+  background-color: #34495e; 
+  color: white;
+  text-align: center;
+  padding: 4rem 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+  color: #f39c12; 
+}
+
+.hero-subtext {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.appliance-grid-section {
+  padding: 2.5rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.appliance-grid-section h2 {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  color: #2c3e50;
+  font-size: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* Appliance ccard  (UI/UX */
+.appliance-card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1.5rem;
+  background-color: white;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  transition: transform 0.2s;
+}
+
+.appliance-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.appliance-card h3 {
+  color: #3498db;
+  margin-bottom: 1rem;
+}
+
+.text-highlight {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.appliance-card p {
+  margin-bottom: 0.5rem;
+}
+
+.card-link-button {
+  display: block;
+  text-decoration: none;
+  margin-top: 1.5rem;
+}
+
+.appliance-card button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.appliance-card button:hover {
+  background-color: #2980b9;
+}
+
+.lebanon-info {
+  background-color: #ecf0f1;
+  padding: 2.5rem 1rem;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.lebanon-info h3 {
+  color: #c0392b; 
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.lebanon-info ul {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 1rem auto;
+}
+
+.lebanon-info li {
+  background: white;
+  padding: 0.75rem;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.lebanon-info .note {
+  margin-top: 1.5rem;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.page {
+  padding: 2.5rem 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.page h1 {
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 0.5rem;
+}
+
+.lead-paragraph {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+.feature-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.feature {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  border-left: 5px solid #f39c12;
+}
+
+.feature h3 {
+  color: #34495e;
+  margin-bottom: 0.5rem;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.contact-form p {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form button {
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1.1rem;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #1f2a36;
+}
+
+.appliance-detail-page h1 {
+  text-align: center;
+}
+
+.calculator-panel {
+  background-color: #ecf0f1;
+  padding: 2rem;
+  border-radius: 12px;
+  margin: 2rem 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border: 1px solid #ddd;
+}
+
+.calculator-title {
+  color: #3498db;
+  margin-bottom: 1.5rem;
+}
+
+.input-group label {
+  font-weight: 600;
+  margin-right: 1rem;
+}
+
+.input-group input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100px;
+  text-align: center;
+}
+
+.results-panel {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-top: 2rem;
+  border-left: 4px solid #f39c12;
+}
+
+.results-panel p {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.usage-result {
+  color: #c0392b;
+  font-size: 1.2rem;
+}
+
+.cost-result {
+  color: #27ae60;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.tips-section {
+  background-color: #d6eaf8;
+  padding: 2rem;
+  border-radius: 12px;
+  margin: 2rem 0;
+}
+
+.tips-section h3 {
+  color: #2980b9;
+  margin-bottom: 1rem;
+}
+
+.tips-section ul {
+  padding-left: 20px;
+}
+
+.tips-section li {
+  margin-bottom: 0.5rem;
+}
+
+.mobile-connection-promo {
+  background-color: #fef0e0;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  border: 1px dashed #f39c12;
+}
+
+.under-development {
+    border: 2px dashed #f39c12; 
+    padding: 2rem;
+    margin-top: 3rem;
+    border-radius: 8px;
+    background-color: #fff8e1; 
+    text-align: center;
+}
+
+
+/* lal mobile Respon */ 
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem; 
+  }
+  
+  .hero-subtext {
+    font-size: 1rem;
+  }
+
+  .appliance-grid-section h2 {
+    font-size: 1.5rem;
+  }
+  
+  .appliance-grid-section,
+  .page {
+    padding: 1.5rem 1rem;
+  }
+  
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
