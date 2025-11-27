@@ -6,7 +6,6 @@ const Appliance = () => {
  
  const [dailyHours, setDailyHours] = useState(8); 
  
-
  const applianceData = {
  1: { 
 name: 'Air Conditioner (1.5hp)', 
